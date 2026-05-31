@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lazy Link Saver</title>
+  <link rel="stylesheet" href="manage.css">
+</head>
+<body>
+  <h1>Lazy Link Saver</h1>
+  <input type="text" id="searchInput" placeholder="Search entries...">
+  <button id="refreshButton">Refresh Data</button>
+  <button id="exportButton">Export Data</button>
+  <label for="importInput">
+    <button id="importButton">Import Data</button>
+  </label>
+  <input type="file" id="importInput" accept=".json" style="display: none;">
+  
+  <button id="clearButton">Clear All Data</button>
+  <ul id="savedDataList">
+  </ul>
+  <script src="manage.js"></script>
+</body>
+</html>

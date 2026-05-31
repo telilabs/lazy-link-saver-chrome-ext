@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Lazy Link Saver",
+  "version": "1.0",
+  "description": "Save highlighted text as a deep link back to that exact passage. Your personal read-later list, pinned to the exact words.",
+  "author": "Tarek Elidrissi",
+  "homepage_url": "https://github.com/trk-tech/LazyLinkSaver",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": ["activeTab", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
